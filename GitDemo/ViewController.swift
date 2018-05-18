@@ -9,11 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var textLabel: UILabel!
+    
     let msg = " Hello Git"
     override func viewDidLoad() {
         super.viewDidLoad()
         print(msg)
-        print(reverse(text: msg))
+        textLabel.text = reverse(text: msg)
     }
 
     override func didReceiveMemoryWarning() {
